@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('iii.jpeg'); /* Set background image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the background image */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 90vh; /* Set the body height to the full viewport height */
+    }
+    .container {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background for better readability */
+      padding: 20px; /* Add padding to the container */
+      border-radius: 10px; /* Add some border radius for a smoother look */
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .tab {
+      flex-grow: 1; /* Make tabs grow to fill available space */
+      margin: 5px;
+      padding: 10px; /* Reduce padding */
+      border: 1px solid #ccc;
+      cursor: pointer;
+      background-color: #fff;
+      max-width: 300px; /* Limit maximum width to prevent tabs from becoming too wide */
+      text-align: center; /* Center text horizontally */
+      overflow: hidden; /* Hide overflow text */
+      white-space: nowrap; /* Prevent text from wrapping */
+      text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+      position: relative; /* Positioning context for ::after pseudo-element */
+    }
+    .tab:hover {
+      background-color: #e0e0e0;
+    }
+    .tab:hover::after {
+      content: attr(data-title); /* Display the title attribute content */
+      position: absolute; /* Position the tooltip */
+      top: calc(100% + 5px); /* Position the tooltip below the tab */
+      left: 50%; /* Center the tooltip horizontally */
+      transform: translateX(-50%); /* Center the tooltip horizontally */
+      background-color: rgba(0, 0, 0, 0.8); /* Background color for the tooltip */
+      color: #fff; /* Text color for the tooltip */
+      padding: 5px; /* Padding for the tooltip */
+      border-radius: 5px; /* Border radius for the tooltip */
+      white-space: nowrap; /* Prevent tooltip from wrapping */
+      z-index: 1; /* Ensure tooltip appears above other elements */
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .right-column {
+      margin-left: auto; /* Align right column to the right */
+    }
+    .title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .case-study,
+    .reference {
+      margin-bottom: 10px; /* Add margin to both elements */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Research</div>
+    <div class="tabs">
+      <div class="column">
+        <div class="case-study">Reference</div>
+        <div class="tab" onclick="window.location.href='https://pdf.sciencedirectassets.com/308315/1-s2.0-S2352146517X00148/1-s2.0-S235214651731102X/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFcaCXVzLWVhc3QtMSJHMEUCIBi1aHTYJMg5A36XRAeAcf9J9F3dmBZKELIoxKqYrlzmAiEAhf5Aan%2BfDLHJQoMmh5G8k1%2F0D4dKVevTtUUT7LYVhCwquwUIoP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDN%2FPZXosped%2BxRzcTiqPBT7EEb3Oum1J9snukT11aoFRqS0hLpSKqBQJa5kO3%2F8t2D%2FLzJb%2Fo2tBW7N2HUnFXA%2Fg1OKC2kXZ7qVZuo7i8XVBOIYiR2xIGoBO3jEluLQob9TYwirZHzaVHBYQ4mRme0KzkxFRgpUQropa4nBpDQ%2FtTU8vkdJ60QAmktfPkmW3gjo4ajAR68XdiamloMxCTXSUb6F4%2BOOucFth6LOcy3tzkyC3AEde04LP6GSupiI0yMOs7nVOraFK1IU5jmMx6L4ibLVe2sy1PgxFyRcxlpz5S5qu8cPWL9q%2Bnq%2FfmqcS%2FWsKRZY%2FVvxr%2FdmkaeESJNyyJ34Jnr%2FtFNKfcQuzSJGkCpWBhBTYsOFdTcFgNDBG6RBFTQ26T3FzX73qfGQtZx9oNBhT00RN%2FYBXG0VFvYCzSZS6JzwOYtilzfYgIJjOwiBve3hb288aO3y4aaqS89KFpLwmlrwfPII7FIArCknwN5gqIlWty1XeYXiQDe0yWOXnJN%2F4Z2CHFvteGra225S%2FYpm0VsUb9m0lKI5Fi6Mja3XoCKNJc8r0VbYeQaW0rZJUN5PtiKIAGA2H1GFjx98IIda2PKQzq7q2fZRBrFp8kA5Rvy41itEd5haRx6kGX%2FbMOFyOrl636ukrleonXHjQTtpGacaotZIAY%2Bkwtr8KGctEe6KYlQqNAawcpPRasckp1Ytw%2FG2aO3lYNlYp7Ah86Nlodvny3mZjNthS%2FtIiUTuXlGEB5fh4GQm7lurZ%2FsHPy%2FoKRAVux3n%2Fu%2FD1y%2FWHU6%2BKBuCoknUMJnMHYqUKJnQ5HJfXyHKFxzhYHfpPdu2ubwzy%2BfCRhlmhNWlhlSSuYLRQFSqqlv%2BU79AT4Ow%2FogMGmWEOckQ%2B%2BezmzV8w2fensQY6sQFc1HFMRGzA8yO8G34OWfUDlUOIvqjxOyr6caTsiYIP%2BnziA30ZfV6Ovia9O36Jdu5mA1IAywcN3hcwUQhPLTjJqnqIPwtAwotCiQCytSnlT%2BG%2FkIdZcwhZkETYHvBz2jTC4NZniwBUMWm7tR%2Bv2sIjdbArJq%2BToPBY2H5kTbql6kiRkAFyDT57%2BGf96xwMfWUhmnbEKDJasCZmFRlar80jnjJYvxiZcyfZeQZyZPzMhzI%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240425T072143Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=ASIAQ3PHCVTY4SBTN27X%2F20240425%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=eba75621521c903b0265ab1d57898d2a203eb1336ba9bc69b1128df814e7eef5&hash=67da2f0ed67d7f9fb3feb9374db86f97e8a10e46e58a256eb673fea2196ef808&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S235214651731102X&tid=spdf-daee1b72-28bc-4cab-8f84-2b277f6ad0d7&sid=11efc771976dc046391a0321c9d8832932d4gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=1e0f5d59570d5952&rr=879c93efe9e804ba&cc=ph'" data-title="Tab 1 with Long Label">Reference Study</div>
+        <div class="tab" onclick="window.location.href='url2.html'" data-title="Tab 2 with Long Label">Tab 2 </div>
+        <div class="tab" onclick="window.location.href='url3.html'" data-title="Tab 3 with Long Label">Tab 3 </div>
+        <div class="tab" onclick="window.location.href='url4.html'" data-title="Tab 4 with Long Label">Tab 4 </div>
+        <div class="tab" onclick="window.location.href='url5.html'" data-title="Tab 5 with Long Label">Tab 5 </div>
+        <div class="tab" onclick="window.location.href='url6.html'" data-title="Tab 6 with Long Label">Tab 6 </div>
+        <div class="tab" onclick="window.location.href='url7.html'" data-title="Tab 7 with Long Label">Tab 7 </div>
+        <div class="tab" onclick="window.location.href='url8.html'" data-title="Tab 8 with Long Label">Tab 8 </div>
+        <div class="tab" onclick="window.location.href='url9.html'" data-title="Tab 9 with Long Label">Tab 9 </div>
+        <div class="tab" onclick="window.location.href='url10.html'" data-title="Tab 10 with Long Label">Tab 10 </div>
+      </div>
+      <div class="column right-column">
+        <div class="reference">Case Study</div>
+        <div class="tab" onclick="window.location.href='https://docs.google.com/document/d/1ZYue3OeHI9ugJPmN4BwbLmuj_ZRmxAxKfH30sbD3Blg/edit?usp=sharing'" data-title="Tab 11 with Long LabeSFAFDFZFEZFDEl">Application of Numerical Methods in the Improvement of Safety of
+Aeronautical Structures
+</div>
+        <div class="tab" onclick="window.location.href='url12.html'" data-title="Tab 12 with Long Label">Tab 12 </div>
+        <div class="tab" onclick="window.location.href='url13.html'" data-title="Tab 13 with Long Label">Tab 13 </div>
+        <div class="tab" onclick="window.location.href='url14.html'" data-title="Tab 14 with Long Label">Tab 14 </div>
+        <div class="tab" onclick="window.location.href='url15.html'" data-title="Tab 15 with Long Label">Tab 15 </div>
+        <div class="tab" onclick="window.location.href='url16.html'" data-title="Tab 16 with Long Label">Tab 16 </div>
+        <div class="tab" onclick="window.location.href='url17.html'" data-title="Tab 17 with Long Label">Tab 17 </div>
+        <div class="tab" onclick="window.location.href='url18.html'" data-title="Tab 18 with Long Label">Tab 18 </div>
+        <div class="tab" onclick="window.location.href='url19.html'" data-title="Tab 19 with Long Label">Tab 19 </div>
+        <div class="tab" onclick="window.location.href='url20.html'" data-title="Tab 20 with Long Label">Tab 20 </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
